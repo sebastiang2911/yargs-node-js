@@ -1,0 +1,25 @@
+{
+  "name": "03-bases-node",
+  "version": "0.0.1",
+  "description": "Is a simple testing ",
+  "license": "MIT",
+  "author": "Sebastian Garcia",
+  "type": "module",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "nodemon --exec node app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "base": "yarn build && node dist/app.js --base=5"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@types/yargs": "^17.0.35",
+    "typescript": "^5.9.3"
+  }
+}
